@@ -1,0 +1,58 @@
+svg {
+    border: solid 2px black;
+    border-right: none;
+    float: left;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+.color-picker-container{
+    margin-top: 15px;
+}
+
+.color-picker-label{
+    width: 90px;
+    display: inline-block;
+}
+
+.slider-label{
+    display: block;
+    margin-top: 15px;
+}
+
+.control {
+    float: left;
+    border: solid 2px black;
+    height: 500px;
+    padding-left: 10px;
+    width: 180px;
+}
+.tool-images {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.tool-btn {
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    width: 120px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.tool-btn:hover {
+    background-color: #eee;
+}
+
+.tool-btn.active {
+    background-color: #ddd;
+}
+
+.slider-input {
+    margin-top: 5px;
+    width: 170px;
+}
+

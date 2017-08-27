@@ -1,0 +1,22 @@
+<div class = "control">
+    <div class = 'btn-panel'>
+        <div class = "tool-btn" ng-click = "viewModel.config.selectedTool='path'" ng-class = "{active: viewModel.config.selectedTool=='path'}">
+            <img class = "tool-images" src = "../../images/pencil.png"/><span>Freestyle</span>
+        </div>
+        <div class = "tool-btn" ng-click = "viewModel.config.selectedTool='polygon'" ng-class = "{active: viewModel.config.selectedTool=='polygon'}">
+            <img class = "tool-images" src = "../../images/pentagon.png"/><span>Polygon</span>
+        </div>
+        <div class = "tool-btn" ng-click = "viewModel.config.selectedTool='rectangle'" ng-class = "{active: viewModel.config.selectedTool=='rectangle'}">
+            <img class = "tool-images" src = "../../images/rectangle.png"/><span>Rectangle</span>
+        </div>
+        <div class = "tool-btn" ng-click = "viewModel.config.selectedTool='circle'" ng-class = "{active: viewModel.config.selectedTool=='circle'}">
+            <img class = "tool-images" src = "../../images/circle.png"/><span>Circle</span>
+        </div>
+    </div>
+    <color-picker label = "Stroke color"  default = "#000" color = "viewModel.config.strokeColor"></color-picker>
+    <color-picker label = "Fill color" opacity="true" default = "rgba(255, 255, 255, 0)" color = "viewModel.config.fillColor"></color-picker>
+    <label>
+        <span class = "slider-label">Stroke size</span>
+        <input class = "slider-input" kendo-slider k-min="0" k-max="10" ng-model="viewModel.config.strokeSize"/>
+    </label>
+</div>

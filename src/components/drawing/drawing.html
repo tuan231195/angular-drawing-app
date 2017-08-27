@@ -1,0 +1,8 @@
+<svg width="800" height="500">
+    <g ng-repeat="model in viewModel.shapes" ng-switch="model.type">
+        <g polygon-shape ng-switch-when="polygon" points="model.points" config="viewModel.config"></g>
+        <g rectangle-shape ng-switch-when="rectangle" points="model.points" config="viewModel.config"></g>
+        <g circle-shape ng-switch-when="circle" points="model.points" config="viewModel.config"></g>
+        <g path-shape ng-switch-default="path" points="model.points" config="viewModel.config"></g>
+    </g>
+</svg>
